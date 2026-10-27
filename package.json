@@ -1,0 +1,27 @@
+{
+  "name": "book-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+       "dev": "vite",
+   "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGABE179/Book-Explorer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/IGABE179/Book-Explorer/issues"
+  },
+  "homepage": "https://github.com/IGABE179/Book-Explorer#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.5"
+  }
+}
