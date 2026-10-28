@@ -10,9 +10,10 @@
 
 <body class="flex min-h-screen flex-col bg-cream text-brown">
 
+  <!-- Header and Navigation -->
   <header class="bg-burgundy px-6 py-5 text-cream">
     <nav class="flex flex-col gap-4 md:flex-row md:justify-between">
-      <a href="index.html" class="text-2xl font-bold">📚Book Explorer</a>
+      <a href="index.html" class="text-2xl font-bold">📚 Book Explorer</a>
 
       <div class="flex flex-wrap gap-5">
         <a href="index.html" class="hover:underline">Home</a>
@@ -23,30 +24,48 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main class="flex-1 px-6 py-10">
-    <h1 class="mb-6 text-3xl font-bold text-burgundy">
+    <h1 class="mb-4 text-3xl font-bold text-burgundy">
       Explore Books
     </h1>
 
+    <p class="mb-6">
+      Discover books, explore new ideas, and find your next favorite story.
+    </p>
+
+    <!-- Search Form -->
     <label for="search" class="mb-2 block font-bold">
       Search for a book
     </label>
 
-    <input
-      type="text"
-      id="search"
-      placeholder="Enter a book title..."
-      class="mb-8 w-full rounded-lg border border-tan bg-white p-3"
+    <div class="mb-8 flex flex-col gap-3 sm:flex-row">
+      <input
+        type="text"
+        id="search"
+        placeholder="Enter a book title..."
+        class="w-full rounded-lg border border-tan bg-white p-3"
+      >
+
+      <button
+        id="search-button"
+        type="button"
+        class="rounded-lg bg-burgundy px-6 py-3 font-bold text-cream hover:opacity-90"
+      >
+        Search
+      </button>
+    </div>
+
+    <!-- Books Display -->
+    <div
+      id="books-container"
+      class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
     >
-
-    <div id="books-container" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-
     </div>
   </main>
 
-   <!-- Footer -->
+  <!-- Footer -->
   <footer class="bg-brown px-6 py-8 text-cream">
-
     <div class="flex flex-col gap-8 md:flex-row md:justify-between">
 
       <div>
@@ -79,9 +98,10 @@
         © 2026 Book Explorer. All rights reserved.
       </p>
     </div>
-
   </footer>
-<script type="module" src="/src/main.js"></script>
+
+  <!-- JavaScript -->
+  <script type="module" src="/src/main.js"></script>
 
 </body>
 </html>
