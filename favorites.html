@@ -23,22 +23,33 @@
     </nav>
   </header>
   
+
 <main class="flex-1 px-6 py-10">
-    <h1 class="mb-4 text-3xl font-bold text-burgundy">
-      Your Favorite Books
-    </h1>
+  
+<h1 class="mb-4 text-3xl font-bold text-burgundy">
+  Your Favorite Books
+</h1>
 
-    <p class="mb-6">
-      No favorites yet. Explore books and find one you love!
-    </p>
+<div id="empty-state">
+  <p class="mb-6">
+    No favorites yet. Explore books and find one you love!
+  </p>
 
-    <a
-      href="books.html"
-      class="inline-block rounded-lg bg-terracotta px-6 py-3 font-bold text-white hover:bg-burgundy"
-    >
-      Explore Books
-    </a>
-  </main>
+  <a
+    href="books.html"
+    class="inline-block rounded-lg bg-terracotta px-6 py-3 font-bold text-white hover:bg-burgundy"
+  >
+    Explore Books
+  </a>
+</div>
+
+<div
+  id="favorites-container"
+  class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+></div>
+
+</main>
+
 
   <!-- Footer -->
   <footer class="bg-brown px-6 py-8 text-cream">
@@ -78,6 +89,6 @@
 
   </footer>
 
-
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>
