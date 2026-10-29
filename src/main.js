@@ -2,6 +2,7 @@
 import { renderBooks } from './ui.js';
 import { getFavorites } from './favorites.js';
 import { fetchBooks } from './api.js';
+import './input.css';
 
 // Show a centered message inside a container
 function showMessage(container, message) {

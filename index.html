@@ -10,153 +10,233 @@
 
 <body class="flex min-h-screen flex-col bg-cream text-brown">
   <!-- Header -->
-  <header class="bg-burgundy px-6 py-5 text-cream">
-    <nav class="flex flex-col gap-4 md:flex-row md:justify-between">
-      <a href="index.html" class="text-2xl font-bold">
-        📚Book Explorer
+  
+<header class="bg-burgundy px-6 py-5 text-cream">
+  <nav class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+
+    <!-- Website logo -->
+    <a href="index.html"
+       class="flex items-center gap-2 text-2xl font-bold transition-transform duration-300 hover:scale-105">
+      <span>📚</span>
+      <span>Book Explorer</span>
+    </a>
+
+    <!-- Navigation links -->
+    <div class="flex flex-wrap items-center gap-3">
+
+      <a href="index.html"
+         aria-current="page"
+         class="nav-link flex items-center gap-2 rounded-lg bg-cream/15 px-4 py-2 font-bold shadow-md ring-1 ring-cream/30 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/25">
+        <span aria-hidden="true">🏠</span>
+        <span>Home</span>
       </a>
 
-      <div class="flex flex-wrap gap-5">
-        <a href="index.html" aria-current="page" class="font-bold underline">
-          Home
-        </a>
-        <a href="books.html" class="hover:underline">
-          Books
-        </a>
-        <a href="favorites.html" class="hover:underline">
-          Favorites
-        </a>
-        <a href="about.html" class="hover:underline">
-          About
-        </a>
-      </div>
-    </nav>
-  </header>
+      <a href="books.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">📖</span>
+        <span>Books</span>
+      </a>
+
+      <a href="favorites.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">❤️</span>
+        <span>Favorites</span>
+      </a>
+
+      <a href="about.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">ℹ️</span>
+        <span>About</span>
+      </a>
+
+    </div>
+  </nav>
+</header>
+
 
   <!-- Main section -->
-  <main class="flex-1">
-    <section class="flex flex-col items-center gap-8 px-6 py-12 md:flex-row">
+ 
+  <!-- Main section -->
+  <main class="flex-1 bg-cream">
 
-      <div class="flex-1">
-        <p class="mb-3 font-bold text-terracotta">
-          YOUR NEXT CHAPTER STARTS HERE
-        </p>
+    <!-- Hero section -->
+    <section class="mx-auto grid max-w-7xl items-center gap-8 px-6 py-12 md:grid-cols-2 md:gap-12 md:py-16">
 
-        <h1 class="mb-5 text-4xl font-bold text-burgundy">
+      <!-- Text on the left -->
+      <div class="animate-fade-in">
+        <h1 class="mb-6 text-4xl font-bold leading-tight text-burgundy md:text-5xl lg:text-6xl">
           Discover Your Next Favorite Book
         </h1>
 
-        <p class="mb-6 text-lg">
+        <p class="max-w-xl text-lg leading-8 text-brown">
           What if the book you haven't opened yet could change the way you see
           the world? Take a look around, follow your curiosity, and discover
           where a single page can take you.
         </p>
+      </div>
 
-        <a href="books.html"
-           class="inline-block rounded-lg bg-terracotta px-6 py-3 font-bold text-white hover:bg-burgundy">
-          Let Curiosity Lead
-        </a>
+      <!-- Book image on the right -->
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1000&q=85"
+          alt="A collection of books waiting to be explored"
+          class="h-72 w-full rounded-3xl object-cover shadow-xl transition-transform duration-500 hover:scale-[1.02] sm:h-96"
+        />
+        <div class="absolute bottom-4 right-4 rounded-xl bg-cream/95 px-4 py-3 shadow-lg">
+          <p class="font-bold text-burgundy">📚 Find your next read</p>
+          <p class="text-sm text-brown">A new world awaits.</p>
+        </div>
       </div>
 
     </section>
 
-    <!-- Welcome section -->
-    <section class="bg-tan px-6 py-10 text-center">
-      <h2 class="mb-4 text-2xl font-bold text-burgundy">
-        There Is a Story for Everyone
-      </h2>
-
-      <p class="mx-auto max-w-2xl">
-        Explore different books, find stories that interest you, and save your
-        favorites to read later. Your next discovery is just a page away.
-      </p>
-    </section>
-
-    <!-- What readers can do -->
+    <!-- Start Exploring -->
     <section class="px-6 py-12">
-      <h2 class="mb-8 text-center text-2xl font-bold text-burgundy">
-        Start Exploring
-      </h2>
+      <div class="mx-auto max-w-7xl">
 
-      <div class="flex flex-col gap-6 md:flex-row">
+        <h2 class="mb-10 text-center text-3xl font-bold text-burgundy">
+          <span class="text-terracotta">—</span>
+          Start Exploring
+          <span class="text-terracotta">—</span>
+        </h2>
 
-        <div class="flex-1 rounded-lg bg-white p-6">
-          <h3 class="mb-3 text-xl font-bold text-burgundy">
-            Discover Books
-          </h3>
-          <p class="mb-4">
-            Explore books from different topics and find something new to read.
-          </p>
-          <a href="books.html" class="font-bold text-terracotta underline">
-            Explore Books
+        <div class="grid gap-6 md:grid-cols-3">
+
+          <!-- Discover Books -->
+          <a href="books.html"
+             class="group rounded-2xl bg-rose-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-burgundy text-2xl text-cream transition-transform duration-300 group-hover:scale-110">
+              <span aria-hidden="true">🔍</span>
+            </div>
+            <h3 class="mb-3 text-xl font-bold text-burgundy">
+              Discover Books
+            </h3>
+            <p class="mb-5 leading-6 text-brown">
+              Explore books from different topics and find something new to read.
+            </p>
+            <span class="font-bold text-terracotta">
+              Explore Books →
+            </span>
           </a>
-        </div>
 
-        <div class="flex-1 rounded-lg bg-white p-6">
-          <h3 class="mb-3 text-xl font-bold text-burgundy">
-            Save Favorites
-          </h3>
-          <p class="mb-4">
-            Keep the books you like in one place so you can find them again.
-          </p>
-          <a href="favorites.html" class="font-bold text-terracotta underline">
-            View Favorites
+          <!-- Save Favorites -->
+          <a href="favorites.html"
+             class="group rounded-2xl bg-green-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-olive text-2xl text-white transition-transform duration-300 group-hover:scale-110">
+              <span aria-hidden="true">♥</span>
+            </div>
+            <h3 class="mb-3 text-xl font-bold text-burgundy">
+              Save Favorites
+            </h3>
+            <p class="mb-5 leading-6 text-brown">
+              Keep the books you like in one place so you can find them again.
+            </p>
+            <span class="font-bold text-terracotta">
+              View Favorites →
+            </span>
           </a>
-        </div>
 
-        <div class="flex-1 rounded-lg bg-white p-6">
-          <h3 class="mb-3 text-xl font-bold text-burgundy">
-            Read and Learn
-          </h3>
-          <p class="mb-4">
-            Find stories, ideas, and new perspectives through reading.
-          </p>
-          <a href="about.html" class="font-bold text-terracotta underline">
-            About Us
+          <!-- Read and Learn -->
+          <a href="about.html"
+             class="group rounded-2xl bg-amber-50 p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-amber-600 text-2xl text-white transition-transform duration-300 group-hover:scale-110">
+              <span aria-hidden="true">📖</span>
+            </div>
+            <h3 class="mb-3 text-xl font-bold text-burgundy">
+              Read and Learn
+            </h3>
+            <p class="mb-5 leading-6 text-brown">
+              Find stories, ideas, and new perspectives through reading.
+            </p>
+            <span class="font-bold text-terracotta">
+              About Us →
+            </span>
           </a>
-        </div>
 
+        </div>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
-  <footer class="bg-brown px-6 py-8 text-cream">
+  
+<footer class="mt-12 bg-burgundy text-cream">
 
-    <div class="flex flex-col gap-8 md:flex-row md:justify-between">
+  <div class="mx-auto max-w-7xl px-6 py-10">
 
-      <div>
-        <h2 class="mb-3 text-xl font-bold">Book Explorer</h2>
-        <p>Every page is a chance to discover a new world.</p>
-      </div>
+    <!-- Logo and tagline -->
+    <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <a href="index.html"
+         class="flex items-center gap-3 text-2xl font-bold transition-transform duration-300 hover:scale-105">
+        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-cream text-2xl">
+          📚
+        </span>
+        <span>Book Explorer</span>
+      </a>
 
-      <div>
-        <h2 class="mb-3 font-bold">Quick Links</h2>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="books.html" class="hover:underline">Books</a></li>
-          <li><a href="favorites.html" class="hover:underline">Favorites</a></li>
-          <li><a href="about.html" class="hover:underline">About</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="mb-3 font-bold">Our Purpose</h2>
-        <p class="max-w-xs">
-          Helping readers discover stories, ideas and new perspectives.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="mt-8 border-t border-tan pt-4 text-center">
-      <p>Made with love for curious minds.</p>
-      <p class="mt-2 text-sm">
-        © 2026 Book Explorer. All rights reserved.
+      <p class="max-w-md text-sm leading-6 text-cream/80">
+        Every book opens a new world. Discover your next favorite story with us.
       </p>
     </div>
 
-  </footer>
+    <div class="mb-8 border-t border-cream/20"></div>
+
+    <!-- Footer navigation -->
+    <div class="mb-8">
+      <h2 class="mb-4 text-lg font-semibold">Explore more stories</h2>
+
+      <nav aria-label="Footer navigation"
+           class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+
+        <a href="index.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">🏠</span>
+          <span>Home</span>
+        </a>
+
+        <a href="books.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">📖</span>
+          <span>Books</span>
+        </a>
+
+        <a href="favorites.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">❤️</span>
+          <span>Favorites</span>
+        </a>
+
+        <a href="about.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">ℹ️</span>
+          <span>About</span>
+        </a>
+
+      </nav>
+    </div>
+
+    <!-- Book lover message -->
+    <div class="mb-8 rounded-xl bg-cream/10 p-5">
+      <p class="mb-2 font-semibold">
+        <span aria-hidden="true">💗</span> A little reminder
+      </p>
+      <p class="text-sm leading-6 text-cream/80">
+        So many books, so many worlds to discover. Your next adventure is waiting!
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-cream/20 px-6 py-4 text-center">
+    <p class="text-sm text-cream/80">
+      &copy; 2026 Book Explorer. Made with care for book lovers.
+    </p>
+  </div>
+
+</footer>
+
 
   <script type="module" src="/src/main.js"></script>
 </body>
