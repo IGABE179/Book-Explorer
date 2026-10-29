@@ -10,18 +10,49 @@
 
 <body class="flex min-h-screen flex-col bg-cream text-brown">
 
-  <header class="bg-burgundy px-6 py-5 text-cream">
-    <nav class="flex flex-col gap-4 md:flex-row md:justify-between">
-      <a href="index.html" class="text-2xl font-bold">📚Book Explorer</a>
+ 
+<header class="bg-burgundy px-6 py-5 text-cream">
+  <nav class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 
-      <div class="flex flex-wrap gap-5">
-        <a href="index.html" class="hover:underline">Home</a>
-        <a href="books.html" class="hover:underline">Books</a>
-        <a href="favorites.html" aria-current="page" class="font-bold underline">Favorites</a>
-        <a href="about.html" class="hover:underline">About</a>
-      </div>
-    </nav>
-  </header>
+    <!-- Website logo -->
+    <a href="index.html"
+       class="flex items-center gap-2 text-2xl font-bold transition-transform duration-300 hover:scale-105">
+      <span>📚</span>
+      <span>Book Explorer</span>
+    </a>
+
+    <!-- Navigation links -->
+    <div class="flex flex-wrap items-center gap-3">
+
+      <a href="index.html"
+         aria-current="page"
+         class="nav-link flex items-center gap-2 rounded-lg bg-cream/15 px-4 py-2 font-bold shadow-md ring-1 ring-cream/30 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/25">
+        <span aria-hidden="true">🏠</span>
+        <span>Home</span>
+      </a>
+
+      <a href="books.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">📖</span>
+        <span>Books</span>
+      </a>
+
+      <a href="favorites.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">❤️</span>
+        <span>Favorites</span>
+      </a>
+
+      <a href="about.html"
+         class="nav-link flex items-center gap-2 rounded-lg px-4 py-2 transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-cream/15 hover:shadow-md">
+        <span aria-hidden="true">ℹ️</span>
+        <span>About</span>
+      </a>
+
+    </div>
+  </nav>
+</header>
+
   
 
 <main class="flex-1 px-6 py-10">
@@ -52,42 +83,82 @@
 
 
   <!-- Footer -->
-  <footer class="bg-brown px-6 py-8 text-cream">
+ 
+<footer class="mt-12 bg-burgundy text-cream">
 
-    <div class="flex flex-col gap-8 md:flex-row md:justify-between">
+  <div class="mx-auto max-w-7xl px-6 py-10">
 
-      <div>
-        <h2 class="mb-3 text-xl font-bold">Book Explorer</h2>
-        <p>Every page is a chance to discover a new world.</p>
-      </div>
+    <!-- Logo and tagline -->
+    <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <a href="index.html"
+         class="flex items-center gap-3 text-2xl font-bold transition-transform duration-300 hover:scale-105">
+        <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-cream text-2xl">
+          📚
+        </span>
+        <span>Book Explorer</span>
+      </a>
 
-      <div>
-        <h2 class="mb-3 font-bold">Quick Links</h2>
-        <ul class="space-y-2">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="books.html" class="hover:underline">Books</a></li>
-          <li><a href="favorites.html" class="hover:underline">Favorites</a></li>
-          <li><a href="about.html" class="hover:underline">About</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="mb-3 font-bold">Our Purpose</h2>
-        <p class="max-w-xs">
-          Helping readers discover stories, ideas and new perspectives.
-        </p>
-      </div>
-
-    </div>
-
-    <div class="mt-8 border-t border-tan pt-4 text-center">
-      <p>Made with love for curious minds.</p>
-      <p class="mt-2 text-sm">
-        © 2026 Book Explorer. All rights reserved.
+      <p class="max-w-md text-sm leading-6 text-cream/80">
+        Every book opens a new world. Discover your next favorite story with us.
       </p>
     </div>
 
-  </footer>
+    <div class="mb-8 border-t border-cream/20"></div>
+
+    <!-- Footer navigation -->
+    <div class="mb-8">
+      <h2 class="mb-4 text-lg font-semibold">Explore more stories</h2>
+
+      <nav aria-label="Footer navigation"
+           class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+
+        <a href="index.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">🏠</span>
+          <span>Home</span>
+        </a>
+
+        <a href="books.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">📖</span>
+          <span>Books</span>
+        </a>
+
+        <a href="favorites.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">❤️</span>
+          <span>Favorites</span>
+        </a>
+
+        <a href="about.html"
+           class="flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 hover:-translate-y-1 hover:bg-cream/10 hover:text-white">
+          <span aria-hidden="true">ℹ️</span>
+          <span>About</span>
+        </a>
+
+      </nav>
+    </div>
+
+    <!-- Book lover message -->
+    <div class="mb-8 rounded-xl bg-cream/10 p-5">
+      <p class="mb-2 font-semibold">
+        <span aria-hidden="true">💗</span> A little reminder
+      </p>
+      <p class="text-sm leading-6 text-cream/80">
+        So many books, so many worlds to discover. Your next adventure is waiting!
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-cream/20 px-6 py-4 text-center">
+    <p class="text-sm text-cream/80">
+      &copy; 2026 Book Explorer. Made with care for book lovers.
+    </p>
+  </div>
+
+</footer>
 
 <script type="module" src="/src/main.js"></script>
 </body>

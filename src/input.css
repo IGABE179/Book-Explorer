@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -7,4 +7,18 @@
   --color-tan: #D9B99B;
   --color-terracotta: #9B3D35;
   --color-burgundy: #702D3B;
+    --font-display: "Playfair Display", Georgia, serif;
+
+  --animate-ribbon: ribbon-drop 0.5s ease-out both;
+
+  @keyframes ribbon-drop {
+    0% { transform: scaleY(0); }
+    70% { transform: scaleY(1.15); }
+    100% { transform: scaleY(1); }
+  }
+}
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
 }
